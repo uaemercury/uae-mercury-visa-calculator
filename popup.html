@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+  body { font-family: Arial, Helvetica, sans-serif; width: 320px; margin: 0; padding: 16px; color: #1A1A1A; }
+  .brand { display: flex; align-items: center; gap: 8px; margin-bottom: 4px; }
+  .brand img { width: 28px; height: 28px; }
+  .brand b { color: #00732F; font-size: 15px; }
+  h1 { font-size: 15px; margin: 6px 0 10px; }
+  label { font-size: 12px; font-weight: bold; display: block; margin-top: 10px; }
+  input { width: 100%; box-sizing: border-box; padding: 7px; margin-top: 4px; border: 1px solid #bbb; border-radius: 4px; font-size: 13px; }
+  .hint { font-size: 11px; color: #666; margin-top: 3px; }
+  button.calc { width: 100%; background: #00732F; color: #fff; border: 0; padding: 9px; border-radius: 4px; font-size: 14px; margin-top: 14px; cursor: pointer; }
+  #result { display: none; margin-top: 12px; background: #eef7f1; border: 1px solid #00732F; border-radius: 6px; padding: 10px 12px; font-size: 13px; line-height: 1.5; }
+  #result .warn { color: #B00020; font-weight: bold; }
+  .links { margin-top: 14px; }
+  .links a { display: block; text-align: center; text-decoration: none; border: 1px solid #00732F; color: #00732F; padding: 8px; border-radius: 4px; font-size: 13px; margin-top: 8px; font-weight: bold; }
+  .links a.main { background: #00732F; color: #fff; }
+  .foot { font-size: 11px; color: #777; margin-top: 12px; text-align: center; }
+</style>
+</head>
+<body>
+  <div class="brand"><img src="icons/icon128.png" alt="UAE Mercury"><b>UAE MERCURY</b></div>
+  <h1>Visa Expiry Calculator</h1>
+
+  <label for="expiry">Your visa expiry date</label>
+  <input type="date" id="expiry">
+
+  <label for="grace">Grace period (days)</label>
+  <input type="number" id="grace" value="0" min="0" max="180">
+  <div class="hint">Visit / tourist visa: 0. Residence visa: as per your category (often 30).</div>
+
+  <button class="calc" id="go">Calculate</button>
+
+  <div id="result"></div>
+
+  <div class="links">
+    <a class="main" href="https://uaemercury.com/check-visa-status-uae/" target="_blank">Check Visa Status Online</a>
+    <a href="https://uaemercury.com/uae-visa-expiry-overstay-fine-check/" target="_blank">Overstay Fine Guide</a>
+  </div>
+
+  <div class="foot">Estimate only — confirm on the official ICP / GDRFA portal.<br>uaemercury.com — Your Window to the Emirates</div>
+
+<script src="popup.js"></script>
+</body>
+</html>

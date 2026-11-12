@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "UAE Mercury \u2014 Visa Expiry Calculator",
+  "version": "1.0.0",
+  "description": "Calculate your UAE visa days left, grace period end and overstay fine estimate. By UAE Mercury \u2014 uaemercury.com",
+  "icons": {
+    "16": "icon16.png",
+    "32": "icon32.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "UAE Visa Expiry Calculator",
+    "default_icon": {
+      "16": "icon16.png",
+      "32": "icon32.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  }
+}
